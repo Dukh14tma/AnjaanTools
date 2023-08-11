@@ -23,43 +23,58 @@ def logo():
 |/     \||/    )_)(____/   |/     \||/     \||/    )_)       )_(   (_______)(_______)(_______/\\_______)
                                                                                                        """)
 
-# main menu code
-def Main_Menu():
-    cls()
-    print(f"{Yellow}This tool is in under development ")
-    print("So maybe few tools didn't work have a good day")
-    os.system("sleep 3")
+def update():
+    """Updates the tool from the git repo."""
     cls()
     logo()
     Authour()
+    print(f"{Yellow}Update Tool")
     print("")
-    print(f"{Red}This tool is in development stage")
-    print(f"{Green}[1]. Programming Languages")
-    print(f"[2]. Web Hacking Tools")
-    print(f"[3]. Vulnerability Scanner Tools")
-    print(f"[4]. Hash Breaking Tools")
-    print(f"[0]. Exit")
+    print("This will update the tool from the git repo.")
+    os.system("sleep 2")
+    print("Any changes made to the tool will be overwritten.")
     print("")
-    print("")
-    Opt = int(input("Enter Your Option: "))
-
-    if Opt==1:
-        Program_Lang()
-    elif Opt==2:
-        Web_hacking()
-    elif Opt==3:
-        Vuln_Scan()
-    elif Opt==4:
-        Hash_Break()
-    elif Opt==0:
-        print(f"{Red}Exiting the program")
-        exit()
-    elif Opt=="":
-        print("{Red}Enter somthimg")
-        Main_Menu()
+    print("Are you sure you want to update the tool?")
+    ans = input("[Y/N] ").lower()
+    if ans == "y":
+        subprocess.run(["git", "pull"])
+        print("Tool updated successfully!")
     else:
-        print(f"{Red}Please choose from an options")
-        Main_Menu()
+        print("Update cancelled.")
+
+
+def main_menu():
+    """The main menu of the tool."""
+    while True:
+        cls()
+        logo()
+        Authour()
+        print(f"{Green}Main Menu")
+        print("")
+        print("[1]. Programming Languages")
+        print("[2]. Web Hacking Tools")
+        print("[3]. Vulnerability Scanner Tools")
+        print("[4]. Hash Breaking Tools")
+        print("[5]. Update Tool")
+        print("[0]. Exit")
+        print("")
+        print("")
+        opt = int(input("Enter your option: "))
+        if opt == 1:
+            Program_Lang()
+        elif opt == 2:
+            web_hacking()
+        elif opt == 3:
+            Vuln_Scan()
+        elif opt == 4:
+            Hash_Break()
+        elif opt == 5:
+            update()
+        elif opt == 0:
+            print("Exiting the program...")
+            exit()
+        else:
+            print("Invalid option!")
 
 
 #Adding Creator Details
