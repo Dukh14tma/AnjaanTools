@@ -164,25 +164,25 @@ def Program_Lang():
     print(f"{Green}Programming Languages")
     print
     print(f"""1.  C/C++
-2.  D
+2.  Crystal
 3.  Dart
 4.  Elixir
 5.  Erlang
 6.  Forth
 7.  Go
 8.  Groovy
-9.  Haskell
+9.  Blade
 10. Java
 11. JavaScrip
 12. Kotlin
-13. Lua
+13. Lua54
 14. Nim
-15. OCaml
-16. Octave
+15. Swift
+16. Tcl
 17. Perl
 18. PHP
 19. Picolisp
-20. Prolog
+20. JQuery
 21. Python
 22. Racket
 23. Ruby
@@ -195,7 +195,7 @@ def Program_Lang():
         pkg = "clang"
         install_package(pkg)
     elif Opt == 2:
-        pkg = "d"
+        pkg = "crystal"
         install_package(pkg)
     elif Opt == 3:
         pkg = "dart"
@@ -207,16 +207,16 @@ def Program_Lang():
         pkg = "erlang"
         install_package(pkg)
     elif Opt == 6:
-        pkg = "forth"
+        pkg = "pforth"
         install_package(pkg)
     elif Opt == 7:
-        pkg = "go"
+        pkg = "golang"
         install_package(pkg)
     elif Opt == 8:
         pkg = "groovy"
         install_package(pkg)
     elif Opt == 9:
-        pkg = "huskell"
+        pkg = "blade"
         install_package(pkg)
     elif Opt == 10:
         pkg = "jdk-17"
@@ -228,16 +228,16 @@ def Program_Lang():
         pkg = "kotlin"
         install_package(pkg)
     elif Opt == 13:
-        pkg = "lua"
+        pkg = "lua54"
         install_package(pkg)
     elif Opt == 14:
         pkg = "nim"
         install_package(pkg)
     elif Opt == 15:
-        pkg = "ocaml"
+        pkg = "swift"
         install_package(pkg)
     elif Opt == 16:
-        pkg = "octive"
+        pkg = "tcl"
         install_package(pkg)
     elif Opt == 17:
         pkg = "perl"
@@ -249,7 +249,7 @@ def Program_Lang():
         pkg = "picolisp"
         install_package(pkg)
     elif Opt == 20:
-        pkg = "prolog"
+        pkg = "jql"
         install_package(pkg)
     elif Opt == 21:
         pkg = "python3"
