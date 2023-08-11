@@ -88,7 +88,7 @@ def install_package(pkg):
                 q3 = input("So if you install this it means you know how to make programs in this language [Y/N]").lower()
                 if q3 == "Y" or q3 == "y":
                     q4 = input("Verify: Are you human [Y/N]").lower
-                     if q4 == "y" or q4 =="Y":
+                    if q4 == "y" or q4 =="Y":
                          q5 = input("Ok one last question [OK/NO]" ).lower()
                          if q5 == "ok" or q5=="y":
                              q6 = input("Are You Really sure to install this [Y/N]").lower()
