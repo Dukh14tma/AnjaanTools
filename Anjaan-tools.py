@@ -58,7 +58,8 @@ def Main_Menu():
         print("[2]. Web Hacking Tools")
         print("[3]. Vulnerability Scanner Tools")
         print("[4]. Hash Breaking Tools")
-        print("[5]. Update Tool")
+        print("[5]. DDos tool")
+        print("[6]. Update Tool")
         print("[0]. Exit")
         print("")
         print("")
@@ -72,6 +73,8 @@ def Main_Menu():
         elif opt == 4:
             Hash_Break()
         elif opt == 5:
+            DDos()
+        elif opt == 6:
             update()
         elif opt == 0:
             print("Exiting the program...")
@@ -93,7 +96,12 @@ def cls():
     else:
         subprocess.run('clear', shell=True)
 
-
+#DDos code
+def DDos():
+    cls()
+    logo()
+    Authour()
+    print("DDos")
 # installing code here
 def install_package(pkg):
     try:
