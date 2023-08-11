@@ -129,27 +129,29 @@ def install_package(pkg):
                                  os.system(f"apt install {pkg} -y 2> /dev/null")
                                  os.system("sleep 3")
                                  print(f"{Green}Successfully Installed {pkg}")
-                     else:
-                         print("Please! Don't be angry i am just asking you")
-                         print("OK i'll install this for you")
-                         os.system(f"apt install {pkg} -y 2> /dev/null")
-                         os.system("sleep 3")
-                         print(f"{Green}Successfully Installed {pkg}")
-                 else:
-                     print("OK i'll install this for you")
-                     os.system(f"apt install {pkg} -y 2> /dev/null")
-                     os.system("sleep 3")
-                     print(f"{Green}Successfully Installed {pkg}")
-             else:
-                 print("Oh! you don't you want to install this")
-                 print("ok going back to Main Menu")
-                 os.system("sleep 3")
-                 Main_Menu()
-         else:
-             print("Oh! you don't you want to install this")
-             print("ok going back to Main Menu")
-             os.system("sleep 3")
-             Main_Menu()
+                    else:
+                        
+                        print("Please! Don't be angry i am just asking you")
+                        print("OK i'll install this for you")
+                        os.system(f"apt install {pkg} -y 2> /dev/null")
+                        os.system("sleep 3")
+                        print(f"{Green}Successfully Installed {pkg}")
+                else:
+                    
+                    print("OK i'll install this for you")
+                    os.system(f"apt install {pkg} -y 2> /dev/null")
+                    os.system("sleep 3")
+                    print(f"{Green}Successfully Installed {pkg}")
+            else:
+                print("Oh! you don't you want to install this")
+                print("ok going back to Main Menu")
+                os.system("sleep 3")
+                Main_Menu()
+        else:
+            print("Oh! you don't you want to install this")
+            print("ok going back to Main Menu")
+            os.system("sleep 3")
+            Main_Menu()
     except subprocess.CalledProcessError as e:
         print(f"Failed to install {pkg}. Error Occured")
 
