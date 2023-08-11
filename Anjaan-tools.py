@@ -67,7 +67,7 @@ def Main_Menu():
 #Adding Creator Details
 def Authour():
     print(f"{Yellow}{101*'='}")
-    print(f"{41* '='} Created By: 4njaan {40* '='}")
+    print(f"{39* '='} Created By: Dukh14tma {39* '='}")
     print(f"{38 * '='}    Version: Beta 0.1    {38* '='}")
 
 #Screen Clear Function
