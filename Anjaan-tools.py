@@ -219,7 +219,7 @@ def Program_Lang():
         pkg = "blade"
         install_package(pkg)
     elif Opt == 10:
-        pkg = "jdk-17"
+        pkg = "openjdk-17"
         install_package(pkg)
     elif Opt == "node.js":
         pkg = "d"
