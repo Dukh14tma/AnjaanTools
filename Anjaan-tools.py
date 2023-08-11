@@ -56,6 +56,7 @@ def Main_Menu():
         print("[3]. Vulnerability Scanner Tools")
         print("[4]. Hash Breaking Tools")
         print("[5]. Update Tool")
+        print("hii")
         print("[0]. Exit")
         print("")
         print("")
