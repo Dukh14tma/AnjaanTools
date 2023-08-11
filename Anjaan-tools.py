@@ -98,13 +98,13 @@ def install_package(pkg):
                                 print("Wait few second")
                                 subprocess.check_call([f"apt", "install", pkg, "-y"])
                                 os.system("sleep 3")
-                                print([f"{Green} Successfully", "Installed", pkg])
+                                print(f"{Green}Successfully Installed {pkg}")
                             else:
                                 print("Please! Don't be angry i am just asking you")
                                 print("OK i'll install this for you")
                                 subprocess.check_call([f"apt", "install", pkg, "-y"])
                                 os.system("sleep 3")
-                                print([f"{Green} Successfully", "Installed", pkg])
+                                print(f"{Green}Successfully Installed {pkg}")
                         else:
                             q7 = input("But i have only one last question[Ok/No] ").lower()
                             if q7 == "ok":
@@ -116,30 +116,30 @@ def install_package(pkg):
                                     os.system("sleep 3")
                                     subprocess.check_call([f"apt", "install", pkg, "-y"])
                                     os.system("sleep 3")
-                                    print([f"{Green} Successfully", "Installed", pkg])
+                                    print(f"{Green}Successfully Installed {pkg}")
                                 else:
                                     print("Please! Don't be angry i am just asking you")
                                     print("OK i'll install this for you")
                                     subprocess.check_call([f"apt", "install", pkg, "-y"])
                                     os.system("sleep 3")
-                                    print([f"{Green} Successfully", "Installed", pkg])
+                                    print(f"{Green}Successfully Installed {pkg}")
                             else:
                                 print("Please! Don't be angry i am just asking you")
                                 print("OK i'll install this for you")
                                 subprocess.check_call([f"apt", "install", pkg, "-y"])
                                 os.system("sleep 3")
-                                print([f"{Green} Successfully", "Installed", pkg])
+                                print(f"{Green}Successfully Installed {pkg}")
                     else:
                         print("Please! Don't be angry i am just asking you")
                         print("OK i'll install this for you")
                         subprocess.check_call([f"apt", "install", pkg, "-y"])
                         os.system("sleep 3")
-                        print([f"{Green} Successfully", "Installed", pkg])
+                        print(f"{Green}Successfully Installed {pkg}")
                 else:
                     print("OK i'll install this for you")
                     subprocess.check_call([f"apt", "install", pkg, "-y"])
                     os.system("sleep 3")
-                    print([f"{Green} Successfully", "Installed", pkg])
+                    print(f"{Green}Successfully Installed {pkg}")
             else:
                 print("Oh! you don't you want to install this")
                 print("ok going back to Main Menu")
@@ -151,7 +151,7 @@ def install_package(pkg):
             os.system("sleep 3")
             Main_Menu()
     except subprocess.CalledProcessError as e:
-        print(f"Failed to install nmap. Error Occured")
+        print(f"Failed to install {pkg}. Error Occured")
 
 
 
