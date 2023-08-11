@@ -82,72 +82,72 @@ def cls():
 def install_package(pkg):
     try:
         q1 = input("You want to install this [Y/N]: ").lower()
-   85         if q1 == "y":
-~  86             q2 = input("Are you sure you want install this [Y/N]: ").lower()
-   87             if q2 == "y" or q2 == "Y":
-~  88                 q3 = input("So if you install this it means you know how to make programs in this language [Y/N]").lower()
-   89                 if q3 == "Y" or q3 == "y":
-~  90                     q4 = input("Verify: Are you human [Y/N]").lower
-   91                     if q4 == "y" or q4 =="Y":
-   92                         q5 = input("Ok one last question [OK/NO]" ).lower()
-~  93                         if q5 == "ok" or q5=="y":
-   94                             q6 = input("Are You Really sure to install this [Y/N]").lower()
-   95                             if q6 == "y":
-   96                                 print("")
-   97                                 print("Ok! I'm installing this because you incest me")
-   98                                 print("Wait few second")                                                                                ~  99                                 os.system(f"apt install {pkg} -y 2> /dev/null")
-  100                                 os.system("sleep 3")
-  101                                 print(f"{Green}Successfully Installed {pkg}")
-  102                             else:
-  103                                 print("Please! Don't be angry i am just asking you")
-  104                                 print("OK i'll install this for you")                                                                   ~ 105                                 os.system(f"apt install {pkg} -y 2> /dev/null")
-  106                                 os.system("sleep 3")
-  107                                 print(f"{Green}Successfully Installed {pkg}")
-  108                         else:
-  109                             q7 = input("But i have only one last question[Ok/No] ").lower()
-~ 110                             if q7 == "ok" or q7=="y":
-  111                                 q8 = input("Are You Really sure to install this [Y/N]").lower(
-  112                                 if q8 == "y":
-  113                                     print()
-  114                                     print("Ok! I'm installing this because you incest me")
-  115                                     print("Wait few second")
-  116                                     os.system("sleep 3")
-~ 117                                     os.system(f"apt install {pkg} -y 2> /dev/null")
-  118                                     os.system("sleep 3")
-  119                                     print(f"{Green}Successfully Installed {pkg}")
-  120                                 else:
-  121                                     print("Please! Don't be angry i am just asking you")
-  122                                     print("OK i'll install this for you")
-~ 123                                     os.system(f"apt install {pkg} -y 2> /dev/null")
-  124                                     os.system("sleep 3")
-  125                                     print(f"{Green}Successfully Installed {pkg}")
-  126                             else:
-  127                                 print("Please! Don't be angry i am just asking you")
-  128                                 print("OK i'll install this for you")
-~ 129                                 os.system(f"apt install {pkg} -y 2> /dev/null")
-  130                                 os.system("sleep 3")
-  131                                 print(f"{Green}Successfully Installed {pkg}")
-  132                     else:
-  133                         print("Please! Don't be angry i am just asking you")
-  134                         print("OK i'll install this for you")
-~ 135                         os.system(f"apt install {pkg} -y 2> /dev/null")
-  136                         os.system("sleep 3")
-  137                         print(f"{Green}Successfully Installed {pkg}")
-  138                 else:
-  139                     print("OK i'll install this for you")
-~ 140                     os.system(f"apt install {pkg} -y 2> /dev/null")
-  141                     os.system("sleep 3")
-  142                     print(f"{Green}Successfully Installed {pkg}")
-  143             else:
-  144                 print("Oh! you don't you want to install this")
-  145                 print("ok going back to Main Menu")
-  146                 os.system("sleep 3")
-  147                 Main_Menu()
-  148         else:
-  149             print("Oh! you don't you want to install this")
-  150             print("ok going back to Main Menu")
-  151             os.system("sleep 3")
-  152             Main_Menu()
+        if q1 == "y":
+            q2 = input("Are you sure you want install this [Y/N]: ").lower()
+            if q2 == "y" or q2 == "Y":
+                q3 = input("So if you install this it means you know how to make programs in this language [Y/N]").lower()
+                if q3 == "Y" or q3 == "y":
+                    q4 = input("Verify: Are you human [Y/N]").lower
+                     if q4 == "y" or q4 =="Y":
+                         q5 = input("Ok one last question [OK/NO]" ).lower()
+                         if q5 == "ok" or q5=="y":
+                             q6 = input("Are You Really sure to install this [Y/N]").lower()
+                             if q6 == "y":
+                                 print("")
+                                 print("Ok! I'm installing this because you incest me")
+                                 print("Wait few second")                                                                                ~  99                                 os.system(f"apt install {pkg} -y 2> /dev/null")
+                                 os.system("sleep 3")
+                                 print(f"{Green}Successfully Installed {pkg}")
+                             else:
+                                 print("Please! Don't be angry i am just asking you")
+                                 print("OK i'll install this for you")                                                                   ~ 105                                 os.system(f"apt install {pkg} -y 2> /dev/null")
+                                 os.system("sleep 3")
+                                 print(f"{Green}Successfully Installed {pkg}")
+                         else:
+                             q7 = input("But i have only one last question[Ok/No] ").lower()
+                             if q7 == "ok" or q7=="y":
+                                 q8 = input("Are You Really sure to install this [Y/N]").lower(
+                                 if q8 == "y":
+                                     print()
+                                     print("Ok! I'm installing this because you incest me")
+                                     print("Wait few second")
+                                     os.system("sleep 3")
+                                     os.system(f"apt install {pkg} -y 2> /dev/null")
+                                     os.system("sleep 3")
+                                     print(f"{Green}Successfully Installed {pkg}")
+                                 else:
+                                     print("Please! Don't be angry i am just asking you")
+                                     print("OK i'll install this for you")
+                                     os.system(f"apt install {pkg} -y 2> /dev/null")
+                                     os.system("sleep 3")
+                                     print(f"{Green}Successfully Installed {pkg}")
+                             else:
+                                 print("Please! Don't be angry i am just asking you")
+                                 print("OK i'll install this for you")
+                                 os.system(f"apt install {pkg} -y 2> /dev/null")
+                                 os.system("sleep 3")
+                                 print(f"{Green}Successfully Installed {pkg}")
+                     else:
+                         print("Please! Don't be angry i am just asking you")
+                         print("OK i'll install this for you")
+                         os.system(f"apt install {pkg} -y 2> /dev/null")
+                         os.system("sleep 3")
+                         print(f"{Green}Successfully Installed {pkg}")
+                 else:
+                     print("OK i'll install this for you")
+                     os.system(f"apt install {pkg} -y 2> /dev/null")
+                     os.system("sleep 3")
+                     print(f"{Green}Successfully Installed {pkg}")
+             else:
+                 print("Oh! you don't you want to install this")
+                 print("ok going back to Main Menu")
+                 os.system("sleep 3")
+                 Main_Menu()
+         else:
+             print("Oh! you don't you want to install this")
+             print("ok going back to Main Menu")
+             os.system("sleep 3")
+             Main_Menu()
     except subprocess.CalledProcessError as e:
         print(f"Failed to install {pkg}. Error Occured")
 
