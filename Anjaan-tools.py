@@ -95,12 +95,14 @@ def install_package(pkg):
                              if q6 == "y":
                                  print("")
                                  print("Ok! I'm installing this because you incest me")
-                                 print("Wait few second")                                                                                ~  99                                 os.system(f"apt install {pkg} -y 2> /dev/null")
+                                 print("Wait few second")                                                                                
+                                 os.system(f"apt install {pkg} -y 2> /dev/null")
                                  os.system("sleep 3")
                                  print(f"{Green}Successfully Installed {pkg}")
                              else:
                                  print("Please! Don't be angry i am just asking you")
-                                 print("OK i'll install this for you")                                                                   ~ 105                                 os.system(f"apt install {pkg} -y 2> /dev/null")
+                                 print("OK i'll install this for you")                                                                   
+                                 os.system(f"apt install {pkg} -y 2> /dev/null")
                                  os.system("sleep 3")
                                  print(f"{Green}Successfully Installed {pkg}")
                          else:
