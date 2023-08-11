@@ -108,7 +108,7 @@ def install_package(pkg):
                          else:
                              q7 = input("But i have only one last question[Ok/No] ").lower()
                              if q7 == "ok" or q7=="y":
-                                 q8 = input("Are You Really sure to install this [Y/N]").lower(
+                                 q8 = input("Are You Really sure to install this [Y/N]").lower()
                                  if q8 == "y":
                                      print()
                                      print("Ok! I'm installing this because you incest me")
