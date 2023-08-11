@@ -28,6 +28,10 @@ logo()
 # main menu code
 def Main_Menu():
     cls()
+    print(f"{Yellow}This tool is in under development ")
+    print("So maybe few tools didn't work have a good day")
+    os.system("sleep 3")
+    cls()
     logo()
     Authour()
     print("")
