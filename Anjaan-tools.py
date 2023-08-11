@@ -66,7 +66,7 @@ def Main_Menu():
 def Authour():
     print(f"{Yellow}{101*'='}")
     print(f"{39* '='} Created By: Dukh14tma {39* '='}")
-    print(f"{38 * '='}    Version: Beta 0.1    {38* '='}")
+    print(f"{38 * '='}    Version: Beta 0.2    {38* '='}")
 
 #Screen Clear Function
 def cls():
