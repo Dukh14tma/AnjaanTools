@@ -43,7 +43,7 @@ def update():
         print("Update cancelled.")
 
 
-def main_menu():
+def Main_Menu():
     """The main menu of the tool."""
     while True:
         cls()
