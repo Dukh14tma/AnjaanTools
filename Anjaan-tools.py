@@ -40,8 +40,6 @@ def update():
         subprocess.run(["git", "pull"])
         print("Tool updated successfully!")
         os.system("sleep 2")
-        os.system("0 2> /dev/null")
-        os.system("python Anjaan-tools.py 2> /dev/null")
     else:
         print("Update cancelled.")
 
