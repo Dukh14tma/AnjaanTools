@@ -310,13 +310,13 @@ def Web_hacking():
         logo()
         Author()
         dev()
-        Web_Hacking()
+        Main_Menu()
     elif Opt == 3:
         cls()
         logo()
         Author()
         dev()
-        Web_Hacking()
+        Main_Menu()
 
 
 
