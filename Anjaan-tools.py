@@ -335,7 +335,6 @@ def scrap():
                 linktext = (web+link.get('href'))
                 all_links.add(linktext)
                 print(f"{Green}{linktext}")
-                os.system("sleep 5")
 #                Web_Hacking()
     else:
         print(f"{Green}{anchors}")
