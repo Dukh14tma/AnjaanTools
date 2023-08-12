@@ -65,7 +65,7 @@ def Main_Menu():
         if opt == 1:
             Program_Lang()
         elif opt == 2:
-            web_hacking()
+            Web_Hacking()
         elif opt == 3:
             Vuln_Scan()
         elif opt == 4:
