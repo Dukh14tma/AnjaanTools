@@ -322,6 +322,35 @@ def Hash_Break():
     Main_Menu()
 
 #Main Menu Code is Here
+def scrap():
+    print(f"{Yellow}Enter your URL (like: google.com):")
+    URL = input(">>> ")
+    web = ("https://www."+URL+"/")
+
+
+    r = requests.get(web)
+
+    Html = r.content
+
+    soup = BeautifulSoup(Html, 'html.parser')
+
+    print(f"{Yellow}Enter HTML tag do You want to scrap (like: a, img, p etc.)")
+    tag = input(">>> ")
+    anchors = soup.find_all(f"{tag}")
+
+
+
+
+    if tag == "a":
+    all_links = set()
+    for link in anchors:
+        if(link.get('href')!= "#"):
+            linktext = (web+link.get('href'))
+            all_links.add(linktext)
+            print(f"{Green}{linktext}")
+    else:
+        print(f"{Green}{anchors}")
+        os.system("sleep 5")
 
 
 try:
