@@ -254,7 +254,7 @@ def Program_Lang():
         Program_lang()
 
 #Web Hacking Tools Code
-def Web_hacking():
+def Web_Hacking():
     cls()
     logo()
     Authour()
@@ -273,13 +273,13 @@ def Web_hacking():
         logo()
         Author()
         dev()
-        Main_Menu()
+        Web_Hacking()
     elif Opt == 3:
         cls()
         logo()
         Author()
         dev()
-        Main_Menu()
+        Web_Hacking()
 
 
 
