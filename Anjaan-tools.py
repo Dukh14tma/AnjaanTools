@@ -337,7 +337,7 @@ def scrap():
                 print(f"{Green}{linktext}")
         print(f"{Yellow}PRESS ENTER TO GO BACK")
         opt = input(">>> ").lower()
-        if opt = "y":
+        if opt == "y":
             Web_Hacking()
         else:
             Web_Hacking()
@@ -348,7 +348,7 @@ def scrap():
         os.system("sleep 5")
         print(f"{Yellow}PRESS ENTER TO GO BACK")
         opt = input(">>> ").lower()
-        if opt = "y":
+        if opt == "y":
             Web_Hacking()
         else:
             Web_Hacking()
