@@ -44,43 +44,6 @@ def update():
         print("Update cancelled.")
 
 
-def Main_Menu():
-    """The main menu of the tool."""
-    while True:
-        cls()
-        logo()
-        Authour()
-        print(f"{Green}Main Menu")
-        print("")
-        print("[1]. Programming Languages")
-        print("[2]. Web Hacking Tools")
-        print("[3]. Vulnerability Scanner Tools")
-        print("[4]. Hash Breaking Tools")
-        print("[5]. DDos tool")
-        print("[6]. Update Tool")
-        print("[0]. Exit")
-        print("")
-        print("")
-        opt = int(input("Enter your option: "))
-        if opt == 1:
-            Program_Lang()
-        elif opt == 2:
-            Web_Hacking()
-        elif opt == 3:
-            Vuln_Scan()
-        elif opt == 4:
-            Hash_Break()
-        elif opt == 5:
-            DDos()
-        elif opt == 6:
-            update()
-        elif opt == 0:
-            print("Exiting the program...")
-            exit()
-        else:
-            print("Invalid option!")
-
-
 #Adding Creator Details
 def Authour():
     print(f"{Yellow}{101*'='}")
@@ -378,6 +341,42 @@ def dev():
     print(f"{Yellow}The developer didn't write this code Because he is lazy")
     print("Maybe he write some day until you can enjoy by choosing another option")
     os.system("sleep 5")
+
+def Main_Menu():
+    """The main menu of the tool."""
+    while True:
+        cls()
+        logo()
+        Authour()
+        print(f"{Green}Main Menu")
+        print("")
+        print("[1]. Programming Languages")
+        print("[2]. Web Hacking Tools")
+        print("[3]. Vulnerability Scanner Tools")
+        print("[4]. Hash Breaking Tools")
+        print("[5]. DDos tool")
+        print("[6]. Update Tool")
+        print("[0]. Exit")
+        print("")
+        print("")
+        opt = int(input("Enter your option: "))
+        if opt == 1:
+            Program_Lang()
+        elif opt == 2:
+            Web_Hacking()
+        elif opt == 3:
+            Vuln_Scan()
+        elif opt == 4:
+            Hash_Break()
+        elif opt == 5:
+            DDos()
+        elif opt == 6:
+            update()
+        elif opt == 0:
+            print("Exiting the program...")
+            exit()
+        else:
+            print("Invalid option!")
 
 
 try:
