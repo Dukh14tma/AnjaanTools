@@ -42,11 +42,23 @@ def update():
         cls()
         logo()
         Authour()
-        print("Tool updated successfully!")
+        print(f"{Green}Tool updated successfully!")
+        print("The Developer wants to say Thank You")
         print("Please close the tool and run again to use changes")
         os.system("sleep 5")
     else:
-        print("Update cancelled.")
+        print("Why are you not Updating the")
+        print(f"{Red}The developer is angry")
+        print("The developer is now updating the tool")
+        os.system("sleep 3")
+        subprocess.run(["git", "pull"])
+        cls()
+        logo()
+        Authour()
+        print(f"{Green}Tool updated successfully!")
+        print("The Developer wants to say Thank You for Updating the tool")
+        print("Please close the tool and run again to use changes")
+        os.system("sleep 5")
 
 
 #Adding Creator Details
@@ -355,9 +367,11 @@ def scrap():
 #        Web_Hacking()
 
 def dev():
-    print(f"{Yellow}The developer didn't write this code Because he is lazy")
+    print()
+    print()
+    print(f"{Red}The developer didn't write this code Because he is lazy")
     print("Maybe he write some day until you can enjoy by choosing another option")
-    os.system("sleep 5")
+    os.system("sleep 10")
 
 def Main_Menu():
     """The main menu of the tool."""
