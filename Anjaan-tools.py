@@ -335,10 +335,23 @@ def scrap():
                 linktext = (web+link.get('href'))
                 all_links.add(linktext)
                 print(f"{Green}{linktext}")
+        print(f"{Yellow}PRESS ENTER TO GO BACK")
+        opt = input(">>> ").lower()
+        if opt = "y":
+            Web_Hacking()
+        else:
+            Web_Hacking()
+
 #                Web_Hacking()
     else:
         print(f"{Green}{anchors}")
         os.system("sleep 5")
+        print(f"{Yellow}PRESS ENTER TO GO BACK")
+        opt = input(">>> ").lower()
+        if opt = "y":
+            Web_Hacking()
+        else:
+            Web_Hacking()
 #        Web_Hacking()
 
 def dev():
