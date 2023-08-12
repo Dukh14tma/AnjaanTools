@@ -276,13 +276,13 @@ def Web_Hacking():
     elif Opt == 2:
         cls()
         logo()
-        Author()
+        Authour()
         dev()
         Web_Hacking()
     elif Opt == 3:
         cls()
         logo()
-        Author()
+        Authour()
         dev()
         Web_Hacking()
 
