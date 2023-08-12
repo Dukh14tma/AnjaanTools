@@ -263,7 +263,7 @@ def Web_Hacking():
     print(f"[2]. Banner Grabbing")
     print(f"[3]. Sql Injection")
     print(f"[0]. Back")
-    opt = input(">>> ")
+    Opt = input(">>> ")
     if Opt == 0:
         Main_Menu()
     elif Opt == 1:
