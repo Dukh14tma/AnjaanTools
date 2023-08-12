@@ -1,0 +1,6 @@
+requests
+os
+sys
+subprocess
+bs4
+socket
