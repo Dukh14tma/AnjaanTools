@@ -336,11 +336,11 @@ def scrap():
                 all_links.add(linktext)
                 print(f"{Green}{linktext}")
                 os.system("sleep 5")
-                Web_Hacking()
+#                Web_Hacking()
     else:
         print(f"{Green}{anchors}")
         os.system("sleep 5")
-        Web_Hacking()
+#        Web_Hacking()
 
 def dev():
     print(f"{Yellow}The developer didn't write this code Because he is lazy")
