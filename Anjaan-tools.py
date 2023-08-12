@@ -361,15 +361,18 @@ def scrap():
 
 
     if tag == "a":
-    all_links = set()
-    for link in anchors:
-        if(link.get('href')!= "#"):
-            linktext = (web+link.get('href'))
-            all_links.add(linktext)
-            print(f"{Green}{linktext}")
+        all_links = set()
+        for link in anchors:
+            if(link.get('href')!= "#"):
+                linktext = (web+link.get('href'))
+                all_links.add(linktext)
+                print(f"{Green}{linktext}")
+                os.system("sleep 5")
+                Web_Hacking()
     else:
         print(f"{Green}{anchors}")
         os.system("sleep 5")
+        Web_Hacking()
 
 def dev():
     print(f"{Yellow}The developer didn't write this code Because he is lazy")
