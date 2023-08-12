@@ -213,9 +213,11 @@ def Program_Lang():
 """)
     print("")
     print("")
-    Opt = int(input("Enter Your Option: "))
+    Opt = int(input(">>> "))
 
-    if Opt == 1:
+    if Opt == 0:
+        Main_Menu()
+    elif Opt == 1:
         pkg = "clang"
         install_package(pkg)
     elif Opt == 2:
@@ -294,10 +296,31 @@ def Web_hacking():
     logo()
     Authour()
     print(f"{Green}Web Hacking Tools")
-    print(f"{Yellow}The developer didn't write this code Because he is lazy")
-    print("Maybe he write some day until you can enjoy by choosing another option")
-    os.system("sleep 5")
-    Main_Menu()
+    print(f"[1]. Web Scraping")
+    print(f"[2]. Banner Grabbing")
+    print(f"[3]. Sql Injection")
+    print(f"[0]. Back")
+    opt = input(">>> ")
+    if Opt == 0:
+        Main_Menu()
+    elif Opt == 1:
+        scrap()
+    elif Opt == 2:
+        cls()
+        logo()
+        Author()
+        dev()
+        Web_Hacking()
+    elif Opt == 3:
+        cls()
+        logo()
+        Author()
+        dev()
+        Web_Hacking()
+
+
+
+    
 
 #Vulnerability Scanning tools
 def Vuln_Scan():
@@ -305,9 +328,7 @@ def Vuln_Scan():
     logo()
     Authour()
     print(f"{Green}Vulnerability Scanning Tools")
-    print(f"{Yellow}The developer didn't write this code Because he is lazy")
-    print("Maybe he write some day until you can enjoy by choosing another option")
-    os.system("sleep 5")
+    dev()
     Main_Menu()
 
 #Hash Breaking Tools
@@ -316,12 +337,10 @@ def Hash_Break():
     logo()
     Authour()
     print(f"{Green}Hash Breaking Tools")
-    print(f"{Yellow}The developer didn't write this code Because he is lazy")
-    print("Maybe he write some day until you can enjoy by choosing another option")
-    os.system("sleep 5")
+    dev()
     Main_Menu()
 
-#Main Menu Code is Here
+#Web Scraping Code is Here
 def scrap():
     print(f"{Yellow}Enter your URL (like: google.com):")
     URL = input(">>> ")
@@ -351,6 +370,11 @@ def scrap():
     else:
         print(f"{Green}{anchors}")
         os.system("sleep 5")
+
+def dev():
+    print(f"{Yellow}The developer didn't write this code Because he is lazy")
+    print("Maybe he write some day until you can enjoy by choosing another option")
+    os.system("sleep 5")
 
 
 try:
