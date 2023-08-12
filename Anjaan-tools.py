@@ -1,7 +1,8 @@
 #!bin/python
-import os
-import sys
-import subprocess
+import os, sys, subprocess
+import requests
+from bs4 import BeautifulSoup
+
 #from colorama import Fore, Style
 
 
