@@ -42,7 +42,8 @@ def update():
         logo()
         Authour()
         print("Tool updated successfully!")
-        os.system("sleep 2")
+        print("Please close the tool and run again to use changes")
+        os.system("sleep 5")
     else:
         print("Update cancelled.")
 
