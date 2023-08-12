@@ -38,6 +38,9 @@ def update():
     ans = input("[Y/N] ").lower()
     if ans == "y":
         subprocess.run(["git", "pull"])
+        cls()
+        logo()
+        Authour()
         print("Tool updated successfully!")
         os.system("sleep 2")
     else:
