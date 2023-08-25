@@ -1,9 +1,5 @@
 #!bin/python
 import os, sys, subprocess
-import requests
-from bs4 import BeautifulSoup
-
-#from colorama import Fore, Style
 
 
 #Colors Defines
@@ -322,49 +318,60 @@ def Hash_Break():
 
 #Web Scraping Code is Here
 def scrap():
-    print(f"{Yellow}Enter your URL (like: google.com):")
-    URL = input(">>> ")
-    web = ("https://www."+URL+"/")
+    try:
+        import requests
+        from bs4 import BeautifulSoup
 
 
-    r = requests.get(web)
-
-    Html = r.content
-
-    soup = BeautifulSoup(Html, 'html.parser')
-
-    print(f"{Yellow}Enter HTML tag do You want to scrap (like: a, img, p etc.)")
-    tag = input(">>> ")
-    anchors = soup.find_all(f"{tag}")
-
-
-
-
-    if tag == "a":
-        all_links = set()
-        for link in anchors:
-            if(link.get('href')!= "#"):
-                linktext = (web+link.get('href'))
-                all_links.add(linktext)
-                print(f"{Green}{linktext}")
-        print(f"{Yellow}PRESS ENTER TO GO BACK")
-        opt = input(">>> ").lower()
-        if opt == "y":
-            Web_Hacking()
+        
+        print(f"{Yellow}Enter your URL (like: google.com):")
+        URL = input(">>> ")
+        web = ("https://www."+URL+"/")
+    
+    
+        r = requests.get(web)
+    
+        Html = r.content
+    
+        soup = BeautifulSoup(Html, 'html.parser')
+    
+        print(f"{Yellow}Enter HTML tag do You want to scrap (like: a, img, p etc.)")
+        tag = input(">>> ")
+        anchors = soup.find_all(f"{tag}")
+    
+    
+    
+    
+        if tag == "a":
+            all_links = set()
+            for link in anchors:
+                if(link.get('href')!= "#"):
+                    linktext = (web+link.get('href'))
+                    all_links.add(linktext)
+                    print(f"{Green}{linktext}")
+            print(f"{Yellow}PRESS ENTER TO GO BACK")
+            opt = input(">>> ").lower()
+            if opt == "y":
+                Web_Hacking()
+            else:
+                Web_Hacking()
+    
+    #                Web_Hacking()
         else:
-            Web_Hacking()
+            print(f"{Green}{anchors}")
+            os.system("sleep 5")
+            print(f"{Yellow}PRESS ENTER TO GO BACK")
+            opt = input(">>> ").lower()
+            if opt == "y":
+                Web_Hacking()
+            else:
+                Web_Hacking()
 
-#                Web_Hacking()
-    else:
-        print(f"{Green}{anchors}")
-        os.system("sleep 5")
-        print(f"{Yellow}PRESS ENTER TO GO BACK")
-        opt = input(">>> ").lower()
-        if opt == "y":
-            Web_Hacking()
-        else:
-            Web_Hacking()
-#        Web_Hacking()
+    except exception as e:
+        print(f"{Red}All required packages are not install")
+        print("{Yellow}Please install all required packages from requirements.txt")
+        os.system("sleep 3")
+        Main_Menu()
 
 def dev():
     print()
