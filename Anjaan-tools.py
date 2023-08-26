@@ -352,11 +352,11 @@ def scrap():
             print(f"{Yellow}PRESS ENTER TO GO BACK")
             opt = input(">>> ").lower()
             if opt == "y":
-                Web_Hacking()
+                scrap()
             else:
-                Web_Hacking()
-    
-    #                Web_Hacking()
+                scrap()
+
+        
         else:
             print(f"{Green}{anchors}")
             os.system("sleep 5")
