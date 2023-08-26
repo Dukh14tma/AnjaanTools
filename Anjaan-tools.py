@@ -367,7 +367,7 @@ def scrap():
             else:
                 Web_Hacking()
 
-    except exception as e:
+    except Exception as e:
         print(f"{Red}All required packages are not install")
         print("{Yellow}Please install all required packages from requirements.txt")
         os.system("sleep 3")
