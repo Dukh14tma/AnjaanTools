@@ -1,5 +1,5 @@
 #!bin/python
-import os, sys, subprocess
+import os, sys, subprocess, time
 
 
 #Colors Defines
@@ -8,6 +8,14 @@ Red = "\33[1;31;40m"
 Yellow = "\33[1;33;40m"
 Cyan = "\33[1;36;40m"
 
+
+#Text typing effect
+def type_text(text):
+	for char in text:
+		print(char, end='', flush= True)
+		time.sleep(0.03)
+	print()
+    
 #Logo Code Here
 def logo():
     print(f"""{Cyan} _______  _       _________ _______  _______  _           _________ _______  _______  _        _______
@@ -38,9 +46,9 @@ def update():
         cls()
         logo()
         Authour()
-        print(f"{Green}Tool updated successfully!")
-        print("The Developer wants to say Thank You")
-        print("Please close the tool and run again to use changes")
+        type_text(f"{Green}Tool updated successfully!")
+        type_text("The Developer wants to say Thank You")
+        type_text("Please close the tool and run again to use changes")
         os.system("sleep 5")
     else:
         print("Why are you not Updating the")
@@ -100,7 +108,7 @@ def install_package(pkg):
                              else:
                                  print("Please! Don't be angry i am just asking you")
                                  print("OK i'll install this for you")                                                                   
-                                 os.system(f"apt install {pkg} -y 2> /dev/null")
+                                 os.system(f"apt install {pkg} -y /dev/null 2>&1 &")
                                  os.system("sleep 3")
                                  print(f"{Green}Successfully Installed {pkg}")
                          else:
@@ -348,7 +356,7 @@ def scrap():
                 if(link.get('href')!= "#"):
                     linktext = (web+link.get('href'))
                     all_links.add(linktext)
-                    print(f"{Green}{linktext}")
+                    type_text(f"{Green}{linktext}")
             print(f"{Yellow}PRESS ENTER TO GO BACK")
             opt = input(">>> ").lower()
             if opt == "y":
@@ -368,16 +376,16 @@ def scrap():
                 Web_Hacking()
 
     except Exception as e:
-        print(f"{Red}All required packages are not install")
-        print("{Yellow}Please install all required packages from requirements.txt")
+        type_text(f"{Red}All required packages are not install")
+        type_text(f"{Yellow}Please install all required packages from requirements.txt")
         os.system("sleep 3")
         Main_Menu()
 
 def dev():
     print()
     print()
-    print(f"{Red}The developer didn't write this code Because he is lazy")
-    print("Maybe he write some day until you can enjoy by choosing another option")
+    type_text(f"{Red}The developer didn't write this code Because he is lazy")
+    type_text("Maybe he write some day until you can enjoy by choosing another option")
     os.system("sleep 10")
 
 def Main_Menu():
@@ -419,13 +427,13 @@ def Main_Menu():
 def warning():
     print()
     print()
-    print("""                            WARNING
+    type_text("""                            WARNING
            This tool didn't Promot illegal activity or unethical activity
     this tool is only for fun and research purpose and if you read this warning
     it means you are interested in developer so follow in instagram or youtube
     """)
     os.system(sleep 5)
-    print(f"Devloper")
+    type_text(f"Devloper")
 try:
     Main_Menu()
 
