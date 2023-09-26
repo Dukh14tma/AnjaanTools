@@ -432,7 +432,7 @@ def warning():
     this tool is only for fun and research purpose and if you read this warning
     it means you are interested in developer so follow in instagram or youtube
     """)
-    os.system(sleep 5)
+    os.system("sleep 5")
     type_text(f"Devloper")
 try:
     Main_Menu()
