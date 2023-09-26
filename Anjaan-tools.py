@@ -13,7 +13,7 @@ Cyan = "\33[1;36;40m"
 def type_text(text):
 	for char in text:
 		print(char, end='', flush= True)
-		time.sleep(0.03)
+		time.sleep(0.05)
 	print()
     
 #Logo Code Here
@@ -102,7 +102,7 @@ def install_package(pkg):
                                  print("")
                                  print("Ok! I'm installing this because you incest me")
                                  print("Wait few second")                                                                                
-                                 os.system(f"apt install {pkg} -y 2> /dev/null")
+                                 os.system(f"apt install {pkg} -y /dev/null 2>&1 &")
                                  os.system("sleep 3")
                                  print(f"{Green}Successfully Installed {pkg}")
                              else:
@@ -120,32 +120,32 @@ def install_package(pkg):
                                      print("Ok! I'm installing this because you incest me")
                                      print("Wait few second")
                                      os.system("sleep 3")
-                                     os.system(f"apt install {pkg} -y 2> /dev/null")
+                                     os.system(f"apt install {pkg} -y /dev/null 2>&1 &")
                                      os.system("sleep 3")
                                      print(f"{Green}Successfully Installed {pkg}")
                                  else:
                                      print("Please! Don't be angry i am just asking you")
                                      print("OK i'll install this for you")
-                                     os.system(f"apt install {pkg} -y 2> /dev/null")
+                                     os.system(f"apt install {pkg} -y /dev/null 2>&1 &")
                                      os.system("sleep 3")
                                      print(f"{Green}Successfully Installed {pkg}")
                              else:
                                  print("Please! Don't be angry i am just asking you")
                                  print("OK i'll install this for you")
-                                 os.system(f"apt install {pkg} -y 2> /dev/null")
+                                 os.system(f"apt install {pkg} -y /dev/null 2>&1 &")
                                  os.system("sleep 3")
                                  print(f"{Green}Successfully Installed {pkg}")
                     else:
                         
                         print("Please! Don't be angry i am just asking you")
                         print("OK i'll install this for you")
-                        os.system(f"apt install {pkg} -y 2> /dev/null")
+                        os.system(f"apt install {pkg} -y /dev/null 2>&1 &")
                         os.system("sleep 3")
                         print(f"{Green}Successfully Installed {pkg}")
                 else:
                     
                     print("OK i'll install this for you")
-                    os.system(f"apt install {pkg} -y 2> /dev/null")
+                    os.system(f"apt install {pkg} -y /dev/null 2>&1 &")
                     os.system("sleep 3")
                     print(f"{Green}Successfully Installed {pkg}")
             else:
