@@ -356,7 +356,7 @@ def scrap():
                 if(link.get('href')!= "#"):
                     linktext = (web+link.get('href'))
                     all_links.add(linktext)
-                    type_text(f"{Green}{linktext}")
+                    print(f"{Green}{linktext}")
             print(f"{Yellow}PRESS ENTER TO GO BACK")
             opt = input(">>> ").lower()
             if opt == "y":
