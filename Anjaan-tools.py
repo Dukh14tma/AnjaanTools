@@ -402,7 +402,7 @@ def Main_Menu():
             Program_Lang()
         elif opt == 2:
             Web_Hacking()
-        elif opt == 3:
+        elif opt == 3
             Vuln_Scan()
         elif opt == 4:
             Hash_Break()
@@ -416,7 +416,16 @@ def Main_Menu():
         else:
             print("Invalid option!")
 
-
+def warning():
+    print()
+    print()
+    print("""                            WARNING
+           This tool didn't Promot illegal activity or unethical activity
+    this tool is only for fun and research purpose and if you read this warning
+    it means you are interested in developer so follow in instagram or youtube
+    """)
+    os.system(sleep 5)
+    print(f"Devloper")
 try:
     Main_Menu()
 
