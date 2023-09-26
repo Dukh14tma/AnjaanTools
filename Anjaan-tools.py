@@ -410,7 +410,7 @@ def Main_Menu():
             Program_Lang()
         elif opt == 2:
             Web_Hacking()
-        elif opt == 3
+        elif opt == 3:
             Vuln_Scan()
         elif opt == 4:
             Hash_Break()
