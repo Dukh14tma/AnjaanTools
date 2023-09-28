@@ -3,5 +3,11 @@ This framework is for beginners who are new in this field. using this tool you c
 
 ### installation
 ```bash
-  apt update
+apt update -y
+apt upgrade -y
+apt install git
+apt install python
+git clone https://github.com/Dukh14tma/AnjaanTools
+cd AnjaanTools
+
 ```
