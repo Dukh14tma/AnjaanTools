@@ -391,10 +391,10 @@ def dev():
 def Main_Menu():
     """The main menu of the tool."""
     while True:
-	cls()
-        logo()
-        Authour()
-        warning()
+		cls()
+		logo()
+		Authour()
+		warning()
         cls()
         logo()
         Authour()
