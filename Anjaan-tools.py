@@ -302,10 +302,6 @@ def Web_Hacking():
         dev()
         Web_Hacking()
 
-
-
-    
-
 #Vulnerability Scanning tools
 def Vuln_Scan():
     cls()
@@ -394,10 +390,6 @@ def Main_Menu():
         cls()
         logo()
         Authour()
-        warning()
-        cls()
-        logo()
-        Authour()
         print(f"{Green}Main Menu")
         print("")
         print("[1]. Programming Languages")
@@ -427,18 +419,6 @@ def Main_Menu():
             exit()
         else:
             print("Invalid option!")
-
-def warning():
-    print()
-    print()
-    type_text(f"""{Red}                            WARNING
-           This tool didn't Promot illegal activity or unethical activity
-    this tool is only for fun and research purpose and i didn't promote any type
-                       of illegal activity so please don't blame me
-    """)
-    os.system("sleep 3")
-    type_text(f"But the Devloper say fuq the rules")
-	os.system("sleep 3")
 try:
     Main_Menu()
 
