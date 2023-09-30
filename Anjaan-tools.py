@@ -438,6 +438,7 @@ def warning():
     """)
     os.system("sleep 3")
     type_text(f"But the Devloper say fuq the rules")
+	os.system("sleep 3")
 try:
     Main_Menu()
 
