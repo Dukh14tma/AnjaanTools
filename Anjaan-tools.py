@@ -391,6 +391,10 @@ def dev():
 def Main_Menu():
     """The main menu of the tool."""
     while True:
+	cls()
+        logo()
+        Authour()
+        warning()
         cls()
         logo()
         Authour()
@@ -427,13 +431,13 @@ def Main_Menu():
 def warning():
     print()
     print()
-    type_text("""                            WARNING
+    type_text(f"""{Red}                            WARNING
            This tool didn't Promot illegal activity or unethical activity
-    this tool is only for fun and research purpose and if you read this warning
-    it means you are interested in developer so follow in instagram or youtube
+    this tool is only for fun and research purpose and i didn't promote any type
+                       of illegal activity so please don't blame me
     """)
-    os.system("sleep 5")
-    type_text(f"Devloper")
+    os.system("sleep 3")
+    type_text(f"But the Devloper say fuq the rules")
 try:
     Main_Menu()
 
