@@ -11,7 +11,7 @@ apt install python
 git clone https://github.com/Dukh14tma/AnjaanTools
 cd AnjaanTools
 pip install -r requirements.txt
-python Anjaan-Tools.py
+python Anjaan-tools.py
 ```
 ### kali Linux
 
@@ -23,6 +23,6 @@ apt install python3
 git clone https://github.com/Dukh14tma/AnjaanTools
 cd AnjaanTools
 pip install -r requirements.txt
-python3 Anjaan-Tools.py
+python3 Anjaan-tools.py
 ```
 
