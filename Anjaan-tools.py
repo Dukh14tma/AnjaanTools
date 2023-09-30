@@ -391,7 +391,7 @@ def dev():
 def Main_Menu():
     """The main menu of the tool."""
     while True:
-	cls()
+        cls()
         logo()
         Authour()
         warning()
